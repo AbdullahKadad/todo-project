@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo Website</title>
+    <link rel="stylesheet" href="./Css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="./Images/logo.jpg" alt="logo">
-        <h1>ToDo</h1>
+        <img src="./Images/logo.jpg" alt="logo" id="logo">
+        <h1 id="title">ToDo</h1>
         <nav>
             <ul>
-                <li>Home</li>
+                <li> <a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Tasks</h2>
@@ -31,22 +33,28 @@
                 <tbody>
                     <tr>
                         <td>task name</td>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox">
+                            <span class="checkbox done"></span>
+                        </td>
                     </tr>
                     <tr>
                         <td>task name</td>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox">
+                            <span class="checkbox"></span>
+                        </td>
                     </tr>
                     <tr>
                         <td>task name</td>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox">
+                            <span class="checkbox"></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
     <footer>
-        <section>
+        <section id="social">
             <a href="">facebook</a>
             <a href="">instagram</a>
         </section>

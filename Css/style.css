@@ -1,0 +1,87 @@
+/* header and nav */
+header {
+    background-color: gray;
+    position: relative;
+    height: 60px;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#title {
+    position: absolute;
+    top: -5px;
+    left: 65px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: 400px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 390px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* main */
+
+main {
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.checkbox {
+    display: inline-block;
+    background-color: red;
+    width: 40px;
+    height: 20px;
+}
+
+.done {
+    background-color: green;
+}
+
+/* footer */
+footer {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 99vw;
+    text-align: center;
+}
+
+#social a {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    color: black;
+    text-decoration: none;
+}

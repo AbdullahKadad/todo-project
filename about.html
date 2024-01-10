@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo Website</title>
+    <link rel="stylesheet" href="./Css/about.css">
 </head>
 
 <body>
     <header>
-        <img src="./Images/logo.jpg" alt="logo">
-        <h1>ToDo</h1>
+        <img src="./Images/logo.jpg" alt="logo" id="logo">
+        <h1 id="title">ToDo</h1>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li>About Us</li>
+                <li> <a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="about" class="relative">
             <h2>About me</h2>
             <img src="./Images/someone.jpg" alt="someone">
+            <h3>Abdullah Kadad</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nulla aut inventore non reiciendis, unde
+                quisquam, distinctio, dolorem quae tempore autem. Quos exercitationem esse dolorem adipisci veritatis
+                eveniet eum quam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nulla aut inventore non
+                reiciendis, unde
                 quisquam, distinctio, dolorem quae tempore autem. Quos exercitationem esse dolorem adipisci veritatis
                 eveniet eum quam?</p>
         </section>
-        <section>
+        <section id="contact" class="relative">
             <form action="">
                 <fieldset>
-                    <legend>Subscribe</legend>
+                    <legend>Contact Us</legend>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"><br>
-                    <input type="submit" value="Subscribe">
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone"><br>
+                    <textarea name="massage" id="massage" cols="50" rows="10">Write a massage</textarea><br>
+                    <input type="submit" value="Send" id="submit">
                 </fieldset>
             </form>
         </section>
