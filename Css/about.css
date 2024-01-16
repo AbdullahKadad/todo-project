@@ -1,123 +1,128 @@
 /* header and nav */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 header {
-    background-color: gray;
-    position: relative;
-    height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  gap: 5px;
+  background-color: #5f8670;
 }
-
 #logo {
-    width: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#title {
-    position: absolute;
-    top: -5px;
-    left: 65px;
+#logo img {
+  width: 100px;
 }
-
+#title h1 {
+  font-size: 32px;
+  color: #820300;
+}
 nav {
-    position: absolute;
-    top: 0;
-    left: 400px;
-    width: 400px;
+  width: 260px;
 }
-
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    width: 390px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
 }
-
-nav ul li {
-    display: inline-block;
-    margin-left: 50px;
-}
-
 nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ff9800;
 }
-
-/* main */
-.relative {
-    position: relative;
-}
-
-#about {
-    height: 300px;
-}
-
-#about h2 {
-    text-align: center;
-}
-
-#about img {
-    width: 220px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
-#about h3 {
-    position: absolute;
-    top: 50px;
-    left: 700px;
-    font-size: 42px;
-    color: tomato;
-}
-
-#about p {
-    position: absolute;
-    top: 150px;
-    left: 500px;
-    border: 1px solid black;
-    padding: 20px;
-    width: 650px;
-}
-
-#contact {
-    margin: 50px 0 50px 0;
-}
-
-#contact form {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-#contact form legend {
-    font-size: 32px;
-    color: brown;
-}
-
-label,
-input {
-    margin: 50px 50px 0 0;
-}
-
-textarea {
-    margin: auto;
-    margin-top: 50px;
-}
-
-#submit {
-    background-color: rgb(122, 151, 206);
-    width: 80px;
-    height: 50px;
-}
-
-/* footer */
+/* Footer */
 footer {
-    background-color: gray;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 45px;
+  font-size: 16px;
+  background-color: #5f8670;
 }
-
-footer a {
-    display: inline-block;
-    margin: 0 10px 0 0;
-    color: black;
-    text-decoration: none;
+#media {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#media a {
+  text-decoration: none;
+  color: #ff9800;
+}
+/* main */
+#aboutMe {
+  padding: 20px 0;
+}
+#perant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+#perant img {
+  width: 220px;
+}
+#perant #child {
+  width: 500px;
+}
+#child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#child h3 {
+  font-size: 20px;
+  color: #b80000;
+}
+#child p {
+  font-size: 18px;
+  color: #5f8670;
+  text-align: justify;
+}
+/* contact form */
+#contact {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+#contact form {
+  width: 550px;
+  margin: auto;
+}
+#contact form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid #ff9800;
+}
+form legend {
+  font-size: 20px;
+  color: #b80000;
+}
+form label,
+textarea {
+  color: #5f8670;
+}
+form input[type="submit"] {
+  background-color: #ff9800;
+  color: #820300;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
 }
