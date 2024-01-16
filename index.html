@@ -1,67 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo Website</title>
-    <link rel="stylesheet" href="./Css/style.css">
-</head>
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="./Images/logo.jpg" alt="logo" id="logo">
-        <h1 id="title">ToDo</h1>
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </ul>
-        </nav>
+      <div id="logo">
+        <div>
+          <img src="./Images/logo.png" alt="logo" />
+        </div>
+        <div id="title">
+          <h1>ToDo</h1>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Tasks</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tasks</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>task name</td>
-                        <td><input type="checkbox">
-                            <span class="checkbox done"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>task name</td>
-                        <td><input type="checkbox">
-                            <span class="checkbox"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>task name</td>
-                        <td><input type="checkbox">
-                            <span class="checkbox"></span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <section id="taskList">
+        <h2>Tasks List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tasks</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Task 1</td>
+              <td>
+                <input type="checkbox" checked />
+                <span class="done"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 2</td>
+              <td>
+                <input type="checkbox" checked />
+                <span class="done"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 3</td>
+              <td>
+                <input type="checkbox" />
+                <span class="notDone"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 4</td>
+              <td>
+                <input type="checkbox" />
+                <span class="notDone"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 5</td>
+              <td>
+                <input type="checkbox" />
+                <span class="notDone"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 6</td>
+              <td>
+                <input type="checkbox" />
+                <span class="notDone"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>Task 7</td>
+              <td>
+                <input type="checkbox" />
+                <span class="notDone"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <footer>
-        <section id="social">
-            <a href="">facebook</a>
-            <a href="">instagram</a>
-        </section>
-        <section>
-            <p>Copyright &copy; 2024 by Refsnes Data. All Rights Reserved. ToDo is Powered by ToDO.CSS.</p>
-        </section>
+      <section>
+        <p>
+          Copyright &copy; 2024 by Refsnes Data. All Rights Reserved. ToDo is
+          Powered by ToDO.CSS.
+        </p>
+      </section>
+      <section id="media">
+        <a href="">facebook</a>
+        <a href="">instagram</a>
+      </section>
     </footer>
-</body>
-
+    <script src="./Js/app.js"></script>
+  </body>
 </html>

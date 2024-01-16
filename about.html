@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo Website</title>
-    <link rel="stylesheet" href="./Css/about.css">
-</head>
+    <link rel="stylesheet" href="./Css/about.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="./Images/logo.jpg" alt="logo" id="logo">
-        <h1 id="title">ToDo</h1>
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </ul>
-        </nav>
+      <div id="logo">
+        <div>
+          <img src="./Images/logo.png" alt="logo" />
+        </div>
+        <div id="title">
+          <h1>ToDo</h1>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="about" class="relative">
-            <h2>About me</h2>
-            <img src="./Images/someone.jpg" alt="someone">
+      <section id="aboutMe">
+        <div id="perant">
+          <img src="./Images/someone.jpg" alt="someone" />
+          <div id="child">
             <h3>Abdullah Kadad</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nulla aut inventore non reiciendis, unde
-                quisquam, distinctio, dolorem quae tempore autem. Quos exercitationem esse dolorem adipisci veritatis
-                eveniet eum quam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nulla aut inventore non
-                reiciendis, unde
-                quisquam, distinctio, dolorem quae tempore autem. Quos exercitationem esse dolorem adipisci veritatis
-                eveniet eum quam?</p>
-        </section>
-        <section id="contact" class="relative">
-            <form action="">
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="phone">Phone:</label>
-                    <input type="number" id="phone" name="phone"><br>
-                    <textarea name="massage" id="massage" cols="50" rows="10">Write a massage</textarea><br>
-                    <input type="submit" value="Send" id="submit">
-                </fieldset>
-            </form>
-        </section>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+              nulla aut inventore non reiciendis, unde quisquam, distinctio,
+              dolorem quae tempore autem. Quos exercitationem esse dolorem
+              adipisci veritatis eveniet eum quam?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ipsa nulla aut inventore non
+              reiciendis, unde quisquam, distinctio, dolorem quae tempore autem.
+              Quos exercitationem esse dolorem adipisci veritatis eveniet eum
+              quam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <form action="">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <label for="email"
+              >Email: <input type="email" id="email" name="email" required
+            /></label>
+            <label for="phone"
+              >Phone: <input type="tel" id="phone" name="phone" required
+            /></label>
+            <textarea
+              name="massage"
+              id="massage"
+              cols="50"
+              rows="10"
+              required
+              placeholder="Write a massage"
+            ></textarea>
+            <input type="submit" value="Send" id="submit" />
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer>
-        <section>
-            <a href="">facebook</a>
-            <a href="">instagram</a>
-        </section>
-        <section>
-            <p>Copyright &copy; 2024 by Refsnes Data. All Rights Reserved. ToDo is Powered by ToDO.CSS.</p>
-        </section>
+      <section>
+        <p>
+          Copyright &copy; 2024 by Refsnes Data. All Rights Reserved. ToDo is
+          Powered by ToDO.CSS.
+        </p>
+      </section>
+      <section id="media">
+        <a href="">facebook</a>
+        <a href="">instagram</a>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>
